@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>HOMBRE</pattern>
+	    <template><think><set name = "topic">hombre</set></think>De acuerdo, dígame, está en sus 20, 30, 40... indicando "estoy en mis Xs" (ejemplo: estoy en mis 40s).</template>
+    </category>
+    <category>
+	    <pattern>SOY UN HOMBRE</pattern>
+	    <template><think><set name = "topic">hombre</set></think>De acuerdo, dígame, está en sus 20, 30, 40... indicando "estoy en mis Xs" (ejemplo: estoy en mis 40s).</template>
+    </category>
+    <category>
+	    <pattern>SOY HOMBRE</pattern>
+	    <template><think><set name = "topic">hombre</set></think>De acuerdo, dígame, está en sus 20, 30, 40... indicando "estoy en mis Xs" (ejemplo: estoy en mis 40s).</template>
+    </category>
+    <topic name="hombre">
+    <category>
+        <pattern>ESTOY EN MIS *</pattern>
+        <template>
+            <think><set name="edad hombre">estoy en mis <star /></set></think>
+            <condition name="edad hombre">
+                <li value="estoy en mis 20s">Se recomienda hacer una revisión frente a las ETS, además de una autoexploración testicular.</li>
+                <li value="estoy en mis 30s">Además de las revisiones frente a ETS, se recomienda realizarse una prueba de colesterol e hipertensión cada pocos años.</li>
+                <li value="estoy en mis 40s">Si hay antecedentes familiares, revisar la diabetes.</li>
+                <li value="estoy en mis 50s">A partir de los 50 años debe realizarse una revisión urológica anual.</li>
+                <li value="estoy en mis 60s">Las revisiones con nuestro oftalmólogo y otorrino-laringólogo deben realizarse cada año para detectar cualquier problema de audición o en la visión. Además de las vacunas de gripe en invierno.</li>
+                <li value="estoy en mis 70s">Al igual que a los 60 años, debe seguir teniendo revisiones de oído y vista, además de las vacunas de invierno.</li>
+            </condition>
+        </template>
+    </category>
+    </topic>
+</aiml>

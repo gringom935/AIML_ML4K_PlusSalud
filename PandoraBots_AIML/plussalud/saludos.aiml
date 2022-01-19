@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>HOLA</pattern>
+	    <template>¡Hola! Soy +Salud,
+	    el chatbot para darle un plus a tu salud sin reparar en hablar con un médico. ¿Cómo te llamas?</template>
+    </category>
+    <category>
+        <pattern>HOLA, ME LLAMO *</pattern>
+        <template>Hola <set name="nombre"><star /></set>. Soy +Salud,
+	    el chatbot para darle un plus a tu salud sin reparar en hablar con un médico. Dígame, su consulta es para un niño, una mujer o un hombre.</template>
+    </category>
+    <category>
+        <pattern>ME LLAMO *</pattern>
+        <template>Hola <set name="nombre"><star /></set>. Soy +Salud,
+	    el chatbot para darle un plus a tu salud sin reparar en hablar con un médico. Dígame, su consulta es para un niño, una mujer o un hombre.</template>
+    </category>
+    <category>
+        <pattern>SOY *</pattern>
+        <template>Hola <set name="nombre"><star /></set>. Soy +Salud,
+	    el chatbot para darle un plus a tu salud sin reparar en hablar con un médico. Dígame, su consulta es para un niño, una mujer o un hombre.</template>
+    </category>
+    <category>
+        <pattern>TE GUSTA MI NOMBRE</pattern>
+        <template>¡Claro! <get name="nombre"></get> es un nombre muy bonito. Dígame, su consulta es para un niño, una mujer o un hombre.</template>
+    </category>
+    <category>
+        <pattern>RECUERDAS COMO ME LLAMO</pattern>
+        <template>¡Sí! Te llamas <get name="nombre"></get></template>
+    </category>
+    <category>
+        <pattern>ADIOS</pattern>
+        <template>Adiós <get name="nombre"></get>. ¡Hasta tu siguiente inquietud!</template>
+    </category>
+    <category>
+        <pattern>HASTA LUEGO</pattern>
+        <template>Adiós <get name="nombre"></get>. ¡Hasta tu siguiente inquietud!</template>
+    </category>
+    <category>
+        <pattern>HASTA OTRA</pattern>
+        <template>Adiós <get name="nombre"></get>. ¡Hasta tu siguiente inquietud!</template>
+    </category>
+</aiml>

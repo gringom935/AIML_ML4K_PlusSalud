@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>UN NIÑO</pattern>
+	    <template>¿Cuántos años o meses tiene? Indique "x años" o "x meses" para que le pueda responder correctamente.
+	        Si es recién nacido indique "0 meses".</template>
+    </category>
+    
+    <category>
+        <pattern>NIÑO</pattern>
+        <template>¿Cuántos años o meses tiene? Indique "x años" o "x meses" para que le pueda responder correctamente.
+	        Si es recién nacido indique "0 meses".</template>
+    </category>
+    
+    <category>
+        <pattern> * AÑOS</pattern>
+        <template>
+            <think><set name="años"><star /> años</set></think>
+            <condition name="años">
+                <li value="2 años">Al niño le toca la del refuerzo anual de Influenza.</li>
+                <li value="3 años">Al niño le toca la del refuerzo anual de Influenza.</li>
+                <li value="4 años">Al niño le toca la del refuerzo anual de Influenza, además se debe poner una dosis de
+                Tétanos Difteria y Tos Ferina.</li>
+                <li value="5 años">Al niño le toca la del refuerzo anual de Influenza.</li>
+                <li value="6 años">Al niño le toca el refuerzo de la triple viral (SRP). Se puede vacunar del covid19.</li>
+                <li value="7 años">No hay vacuna dedicada a los 7 años, revise 6 o 11 años. Se puede vacunar del covid19.</li>
+                <li value="8 años">No hay vacuna dedicada a los 8 años, revise 6 o 11 años. Se puede vacunar del covid19.</li>
+                <li value="9 años">No hay vacuna dedicada a los 9 años, revise 6 o 11 años. Se puede vacunar del covid19.</li>
+                <li value="10 años">No hay vacuna dedicada a los 10 años, revise 6 o 11 años. Se puede vacunar del covid19.</li>
+                <li value="11 años">Se debe poner la vacuna del virus del papiloma humano. Se puede vacunar del covid19.</li>
+                <li value="12 años">Se debe poner una dosis de difteria, tetanos y tosferina. Se puede vacunar del covid19.</li>
+                <li value="13 años">Debe tener la vacuna del covid19.</li>
+                <li value="14 años">Debe tener la vacuna del covid19.</li>
+                <li value="15 años">Debe tener la vacuna del covid19.</li>
+                <li value="16 años">Debe tener la vacuna del covid19.</li>
+                <li value="17 años">Debe tener la vacuna del covid19.</li>
+            </condition>
+        </template>
+    </category>
+    
+    <category>
+        <pattern> * MESES</pattern>
+        <template>
+            <think><set name="meses"><star /> meses</set></think>
+            <condition name="meses">
+                <li value="0 meses">Tu pequeñín debe tener puesta 1 dosis de la Hepatitis B y si no pesa menos de 2kg
+                    la BCG (Bacilo de Calmette y Guérin), que protege al niño de tuberculosis.</li>
+                <li value="2 meses">Tu pequeñín debe tener puestas: Neumococo, Rotavirus, Hepatitis B (si no se vacunó en los primeros 7 días
+                    de vida) y la Pentavalente acelular (que protege a los bebés de cinco enfermedades: difteria, tos ferina, tétanos, poliomielitis
+                    e infecciones producidas por Haemophilus Influenzae tipo b.)</li>
+                <li value="3 meses">No hay vacuna dedicada a los 3 meses, indica 2 o 4 meses.</li>
+                <li value="4 meses">Si no las tiene ya, tu pequeín debe tener puestas: Pentavalente acelular, Rotavirus y Neumococo.</li>
+                <li value="5 meses">No hay vacuna dedicada a los 5 meses, indica 4 o 6 meses.</li>
+                <li value="6 meses">Si no las tiene ya: Pentavalente acelular y Rotavirus. Hepatitis B e Influenza (provoca una enfermedad respiratoria contagiosa)</li>
+                <li value="7 meses">Le toca la 2a dosis de Influenza (provoca una enfermedad respiratoria contagiosa).</li>
+                <li value="8 meses">No hay vacuna dedicada a los 8 meses, revise los 7 meses y anteriores.</li>
+                <li value="9 meses">No hay vacuna dedicada a los 9 meses, revise los 7 meses y anteriores.</li>
+                <li value="10 meses">No hay vacuna dedicada a los 10 meses, revise los 7 meses y anteriores.</li>
+                <li value="11 meses">No hay vacuna dedicada a los 11 meses, revise los 7 meses y anteriores.</li>
+                <li value="12 meses">Al bebé le toca la vacuna del Neumococo y la triple viral, que ofrece protección contra 3 enfermedades, sarampión,
+                    rubeola y parotiditis.</li>
+                <li value="13 meses">No hay vacuna dedicada a los 13 meses, revise los 12 o los 18 meses.</li>
+                <li value="14 meses">No hay vacuna dedicada a los 14 meses, revise los 12 o los 18 meses.</li>
+                <li value="15 meses">Se debe vacunar de la varicela si no tiene puesta la triple viral.</li>
+                <li value="16 meses">No hay vacuna dedicada a los 16 meses, revise los 12 o los 18 meses.</li>
+                <li value="17 meses">No hay vacuna dedicada a los 17 meses, revise los 12 o los 18 meses.</li>
+                <li value="18 meses">Le tocaría la Pentavalente acelular.</li>
+            </condition>
+        </template>
+    </category>
+</aiml>
