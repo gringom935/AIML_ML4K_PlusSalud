@@ -10,8 +10,9 @@ Partiendo de que el proyecto es de python, debemos tener instalado python en el 
 
 ### Pruebas :building_construction:
 
-Mi modelo ya está entrenado, solo hace falta probarlo ejecutando:
+Mis modelos ya está entrenados, solo hace falta probarlo ejecutando los ficheros:
 
+	$ python Chatbot AIML con Python.ipynb
 	$ python chatbot.py
 
 ### Construido con :construction_worker:
