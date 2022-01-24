@@ -14,6 +14,7 @@ Mis modelos ya está entrenados, solo hace falta probarlo ejecutando los fichero
 
 	$ python Chatbot AIML con Python.ipynb
 	$ python chatbot.py
+	$ python Conjuncion AIML y ML4K.ipynb
 
 ### Construido con :construction_worker:
 
